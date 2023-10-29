@@ -5,6 +5,9 @@
     margin: 0 auto;
     padding: 0;
     color: #000;
+    font-family: Roboto;
+    border: 0;
+    outline: 0;
 }
 ul{
     list-style: none;
@@ -19,14 +22,38 @@ a{
     align-items: center;
 }
 .navbar_menu{
+    text-transform: capitalize;
     display: flex;
 }
 .navbar_item{
-    background-color: aqua;
-    width: 140px;
+    position: relative;
+    padding: 30px 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+.navbar_item:hover::before{
+    position: absolute;
+    content: '';
+    background-color: red;
+    height: 4px;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 .navbar_sub-menu{
     display: none;
-    visibility: hidden;
-    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    border-top: 2px red solid;
+}
+.navbar_sub-menu_item_link{
+    font-size: 15px;
+    width: 200px;
+    padding-inline-start: 30px;
+    padding-block: 10px;
+    border-bottom: 1px solid gray;
+}
+.navbar_item:hover .navbar_sub-menu{
+    display: block;
 }
