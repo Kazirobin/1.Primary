@@ -60,6 +60,7 @@ a {
 .navbar_menu {
   text-transform: capitalize;
   display: flex;
+  z-index: 100;
 }
 .navbar_item {
   position: relative;
@@ -93,8 +94,8 @@ a {
   border-bottom: 1px solid gray;
   opacity: 0.8;
 }
-.navbar_sub-menu_item_link:hover{
-    opacity: 1;
+.navbar_sub-menu_item_link:hover {
+  opacity: 1;
 }
 .navbar_item:hover .navbar_sub-menu {
   display: block;
@@ -151,3 +152,197 @@ a {
   }
 }
 /* nav menu section end */
+
+/* slider section start  */
+.slider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden; /* Hide overflow content */
+}
+
+.btnL,.btnR {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50px;
+  height: 30px;
+  border-radius: 4px;
+  position: absolute;
+  padding:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  z-index: 3;
+}
+
+.btnL {
+  top: 50%;
+  left: 20px;
+}
+
+.btnR {
+  top: 50%;
+  right: 40px;
+}
+.fa-chevron-left,.fa-chevron-right{
+  color: #fff;
+  font-size: 18px;
+
+}
+/* Define styles for your slides */
+.slide {
+  height:600px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  display: none; /* Initially hide all slides */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.active-slide {
+  display: flex; /* Show the active slide */
+
+}
+
+.slide2 {
+  background-image: url("../images/slide/slider_1.jpg");
+}
+.slide1 {
+  background-image: url("../images/slide/slide_2.jpg");
+}
+.slide_title,.slide_heading,.slide_btn{
+  color: #fff;
+}
+.slide_title{
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.slide_line{
+  background: #fff;
+  height: 1px;
+  margin-top: 40px;
+  width: 200px;
+
+}
+.slide_heading{
+  font-family:Roboto Slab;
+  font-weight: 400;
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+  font-size: 70px;
+  text-transform: capitalize;
+  position: relative;
+}
+.slide_heading-dot{
+  background-color: red;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  top: 70%;
+  transform: translate(-100%, -30%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(-100%, -30%);
+  -moz-transform: translate(-100%, -30%);
+  -ms-transform: translate(-100%, -30%);
+  -o-transform: translate(-100%, -30%);
+}
+.slide_btn a{
+  border: #fff 2px solid;
+  color: #fff;
+  min-width: 1%;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0 auto; 
+}
+.slide2 .slide_heading{
+  font-size: 55px;
+}
+.slide2 .slide_line{
+  margin-top: -10px;
+}
+.slide2 .slide_title{
+  margin-top: 60px;
+}
+.slide2 .slide_btn{
+  margin-top: 120px;
+}
+@media (max-width:1000px){
+  .slide{
+    height: 500px;
+  }
+  .slide .slide_title{
+    font-size: 25px;
+  }
+  .slide .slide_heading{
+    font-size: 30px;
+  }
+  .slide_heading-dot{
+    height: 5px;
+    width: 5px;
+  }
+}
+/* slider section end  */
+/* client section start  */
+.client_container{
+  display: flex;
+  padding: 40px;
+}
+.fa-heart{
+  color: #fff;
+  font-size: 55px;
+  -webkit-text-stroke: 1.5px red;
+  border-radius: 50%;
+  padding: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.fa-heart:hover{
+  color: red;
+  -webkit-text-stroke: 1.5px #fff;
+  font-size: 55px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.client{
+  display: flex;
+  flex-direction: column;
+}
+.client_title{
+  text-transform: capitalize;
+  font-family: Roboto Slab;
+  color: #000;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 10px auto;
+}
+.client_text{
+  font-weight: 300;
+  text-align: center;
+  max-width: 250px;
+  margin: 30px ;
+}
+@media (max-width:1000px){
+  .client_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* client section end  */

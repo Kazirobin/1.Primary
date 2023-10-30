@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- navbar section start  -->
     <nav class="navbar">
         <div class="logo">
             <a href="#!">
@@ -21,8 +22,10 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
+
         <ul class="navbar_menu">
             <li class="navbar_item"><a href="#!" class="navbar_item_link">home</a></li>
+
             <li class="navbar_item"><a href="#!" class="navbar_item_link">pages</a>
             <ul class="navbar_sub-menu">
                 <li class="navbar_sub-menu_item"><a href="#!" class="navbar_sub-menu_item_link">about us</a></li>
@@ -34,6 +37,7 @@
                 <li class="navbar_sub-menu_item"><a href="#!" class="navbar_sub-menu_item_link">third level menu</a></li>
             </ul>
             </li>
+
             <li class="navbar_item"><a href="#!" class="navbar_item_link">portfolio</a>
             <ul class="navbar_sub-menu">
                 <li class="navbar_sub-menu_item"><a href="#!" class="navbar_sub-menu_item_link">2 columns</a></li>
@@ -44,6 +48,7 @@
                 <li class="navbar_sub-menu_item"><a href="#!" class="navbar_sub-menu_item_link">single portfolio wide</a></li>
             </ul>
             </li>
+
             <li class="navbar_item"><a href="#!" class="navbar_item_link">the blog</a>
             <ul class="navbar_sub-menu">
                 <li class="navbar_sub-menu_item"><a href="#!" class="navbar_sub-menu_item_link">classic fullwidth</a></li>
@@ -52,11 +57,73 @@
                 <li class="navbar_sub-menu_item"><a href="#!" class="navbar_sub-menu_item_link">single fullwidth</a></li>
             </ul>
             </li>
+
             <li class="navbar_item"><a href="#!" class="navbar_item_link">shortcodes</a></li>
+
             <li class="navbar_item"><a href="#!" class="navbar_item_link"><i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
             
         </nav>
-
+    <!-- navbar section end  -->
+        <!-- slider section start  -->
+        <div class="slider">
+            <button class="btnL" onclick="showSlide('prev')"><i class="fas fa-chevron-left"></i></button>
+            <button class="btnR" onclick="showSlide('next')"><i class="fas fa-chevron-right"></i></button>
+            <div class="slide slide1 active-slide">
+                <h2 class="slide_title">our company will help with your problem</h2>
+                <span class="slide_line"></span>
+                <h1 class="slide_heading">clean <span class="slide_heading-dot"></span> simple <span class="slide_heading-dot"></span> perfect</h1>
+                <div class="slide_btn">
+                    <a href="#!">Purchase now</a>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <h1 class="slide_heading">
+                    primary - made for real business
+                </h1>
+                <span class="slide_line"></span>
+                <h2 class="slide_title">
+                    every line of code is written with love
+                </h2>
+                <div class="slide_btn">
+                    <a href="#!">Purchase now</a>
+                </div>
+            </div>
+            <!-- Add more slides by creating additional div elements with the "slide" class -->
+        </div>
+        <!-- slider section end  -->
+        <!-- client section start  -->
+        <div class="client_container">
+            <div class="client">
+                <div class="client_icon">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <h1 class="client_title">minimal design</h1>
+                <p class="client_text">Remainder household direction zealously the unwilling roused enable estate</p>
+            </div>
+            <div class="client">
+                <div class="client_icon">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <h1 class="client_title">minimal design</h1>
+                <p class="client_text">Remainder household direction zealously the unwilling roused enable estate</p>
+            </div>
+            <div class="client">
+                <div class="client_icon">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <h1 class="client_title">minimal design</h1>
+                <p class="client_text">Remainder household direction zealously the unwilling roused enable estate</p>
+            </div>
+            <div class="client">
+                <div class="client_icon">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <h1 class="client_title">minimal design</h1>
+                <p class="client_text">Remainder household direction zealously the unwilling roused enable estate</p>
+            </div>
+        </div>
+        <!-- client section end  -->
 <div class="vh"></div>
         <!-- mani js file  -->
         <script src="./asset/js/script.js"></script>
