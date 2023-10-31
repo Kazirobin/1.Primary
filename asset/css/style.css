@@ -177,6 +177,7 @@ a {
 .btnL,
 .btnR {
   background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
   width: 50px;
   height: 30px;
   border-radius: 4px;
@@ -311,7 +312,7 @@ a {
   display: flex;
   padding: 40px;
 }
-.fa-heart {
+.stroke {
   color: var(--color-white);
   font-size: 55px;
   -webkit-text-stroke: 1.5px var(--color-red);
@@ -322,7 +323,7 @@ a {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.fa-heart:hover {
+.stroke:hover {
   color: var(--color-red);
   -webkit-text-stroke: 1.5px var(--color-white);
   font-size: 55px;
@@ -363,7 +364,7 @@ a {
 .work {
   margin: 20px;
 }
-.work_title {
+.work_title,.service_title,.testimonial_title {
   font-family: var(--secondary-font);
   font-size: 50px;
   font-weight: 300;
@@ -371,19 +372,19 @@ a {
   text-align: center;
   margin-block: 30px;
 }
-.work_line{
+.work_line,.service_line,.testimonial_line{
   width: 150px;
   height: 2px;
   text-align: center;
   display: block;
   background-color: var(--color-red);
 }
-.work-text{
+.work-text,.service_text,.testimonial_text{
   text-align: center;
   font-size: var(--size-m);
   margin-block: 30px;
 }
-.work_cards{
+.work_cards,.service_cards{
   margin-block: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
@@ -398,7 +399,7 @@ a {
 .work_card_img{
   width: 100%;
 }
-.work_card_title{
+.work_card_title,.service_card_title{
   font-family: var(--secondary-font);
   font-weight: 400;
   margin-block: 20px;
@@ -420,4 +421,63 @@ a {
   margin: 0 auto;
 }
 /* work section end  */
+/* rating section start  */
+.ratings{
+  background-image: url(../images/client/client_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  row-gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline: 50px;
+  margin:0 auto;
+}
+.ratings > div:nth-child(4) {
+  justify-self: center;
+}
+.rating .stroke,.rating .stroke{
+  font-size: 40px;
+  background-color: transparent;
+  color: transparent;
+  -webkit-text-stroke: var(--color-white) 2px;
+}
+.rating{
+  text-align: center;
+  min-width: 400px;
+  max-width: 410px;
+  justify-self: center;
+  align-self: center;
+  padding-block: 40px;
+}
+.rating_count{
+  color: var(--color-white);
+  font-size: 50px;
+  font-weight: 300;
+  margin-block: 5px;
+}
+.rating_text{
+  color: var(--color-white);
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: var(--size-m);
+  margin-block-end: 20px;
+}
+/* rating section end */
+/* service section start  */
+.service{
+  margin: 20px;
+}
+.service_card{
+  display: flex;
+  max-width: 400px;
+}
+.service_card_icon .stroke:hover{
+  background-color: var(--color-white);
+  color: var(--color-white);
+  -webkit-text-stroke: 1.5px var(--color-red);
+}
 
+/* service section end  */
