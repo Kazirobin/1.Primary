@@ -379,12 +379,12 @@ a {
   display: block;
   background-color: var(--color-red);
 }
-.work-text,.service_text,.testimonial_text{
+.work-text,.service_text,.testimonial_text,.testimonial_card_title span{
   text-align: center;
   font-size: var(--size-m);
   margin-block: 30px;
 }
-.work_cards,.service_cards{
+.work_cards,.service_cards,.testimonial_cards{
   margin-block: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
@@ -396,10 +396,10 @@ a {
   background-color: var(--color-white);
   text-align: center;
 }
-.work_card_img{
+.work_card_img,.testimonial_card_img{
   width: 100%;
 }
-.work_card_title,.service_card_title{
+.work_card_title,.service_card_title,.testimonial_card_title{
   font-family: var(--secondary-font);
   font-weight: 400;
   margin-block: 20px;
@@ -467,10 +467,10 @@ a {
 }
 /* rating section end */
 /* service section start  */
-.service{
+.service,.testimonial{
   margin: 20px;
 }
-.service_card{
+.service_card,.testimonial_card{
   display: flex;
   max-width: 400px;
 }
@@ -479,5 +479,19 @@ a {
   color: var(--color-white);
   -webkit-text-stroke: 1.5px var(--color-red);
 }
-
 /* service section end  */
+/* testimonial section start  */
+.testimonial_cards{
+  grid-template-columns: ;
+}
+.testimonial_card{
+  gap: 20px;
+}
+.testimonial_card_img{
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* testimonial section end */
