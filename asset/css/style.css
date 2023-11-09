@@ -28,9 +28,7 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-section{
-  max-width: 1000px;
-}
+
 .vh {
   background-color: #ffe0e0;
   height: 100px;
@@ -486,12 +484,15 @@ section{
 /* testimonial section start  */
 .testimonial{
   background-color: #F7F7F7;
+  margin: auto;
+  max-width: 1400px;
 }
-.testimonial_card{
-  gap: 20px;
-  background-color: #fff;
-}
-.testimonial_card_img{
+  .testimonial_cards{
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonial_card_img{
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
