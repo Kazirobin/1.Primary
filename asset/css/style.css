@@ -28,6 +28,9 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+section{
+  max-width: 1000px;
+}
 .vh {
   background-color: #ffe0e0;
   height: 100px;
@@ -486,6 +489,7 @@ a {
 }
 .testimonial_card{
   gap: 20px;
+  background-color: #fff;
 }
 .testimonial_card_img{
   border-radius: 50%;
