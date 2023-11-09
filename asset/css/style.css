@@ -481,8 +481,8 @@ a {
 }
 /* service section end  */
 /* testimonial section start  */
-.testimonial_cards{
-  grid-template-columns: ;
+.testimonial{
+  background-color: #F7F7F7;
 }
 .testimonial_card{
   gap: 20px;
