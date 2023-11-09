@@ -499,4 +499,9 @@ a {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+@media (max-width:600px) {
+.testimonial_cards{
+  grid-template-columns: 1fr;
+}  
+}
 /* testimonial section end */
