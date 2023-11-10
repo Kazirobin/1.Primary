@@ -272,6 +272,7 @@ a {
   -ms-transform: translate(-100%, -30%);
   -o-transform: translate(-100%, -30%);
 }
+
 .slide_btn a {
   border: var(--color-white) 2px solid;
   color: var(--color-white);
