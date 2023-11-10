@@ -254,6 +254,7 @@ a {
   text-transform: capitalize;
   position: relative;
 }
+
 .slide_heading-dot {
   background-color: var(--color-red);
   height: 15px;
