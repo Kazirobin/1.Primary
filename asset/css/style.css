@@ -313,6 +313,9 @@ a {
   display: flex;
   padding: 40px;
 }
+.slide_title.active{
+  color: #ff0000;
+}
 .stroke {
   color: var(--color-white);
   font-size: 55px;
