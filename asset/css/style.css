@@ -262,6 +262,7 @@ a {
   position: absolute;
   border-radius: 50%;
   top: 70%;
+  
   transform: translate(-100%, -30%);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
