@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+:root {
+  --primary-font: Roboto;
+  --secondary-font: Roboto Slab;
+  --text-black:#444444;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-red: #ff0000;
+  --size-xxl: 27px;
+  --size-xl: 24px;
+  --size-l: 21px;
+  --size-m: 18px;
+  --size-s: 15px;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a {
+    color: var(--text-black);
+    display: inline-block;
+}
+.text_1{
+    font-family: var(--primary-font);
+    font-size: 22px;
+    font-weight: 300;
+}
+@media (max-width){}
