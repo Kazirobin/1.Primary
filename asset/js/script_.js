@@ -7,3 +7,4 @@ for(let i=1;i<activeLink.length;i++){
     activeLink[i].addEventListener('mouseout',() => {activeLink[i].classList.remove('active')})
 }
 
+ip
