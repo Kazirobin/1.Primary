@@ -490,7 +490,7 @@ a {
   .testimonial_cards{
     background-color: #fff;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .testimonial_card_img{
   border-radius: 50%;
