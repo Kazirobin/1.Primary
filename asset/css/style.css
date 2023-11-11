@@ -501,7 +501,7 @@ a {
 }
 @media (max-width:600px) {
 .testimonial_cards{
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }  
 
 }
