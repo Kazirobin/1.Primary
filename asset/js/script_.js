@@ -7,4 +7,9 @@ for(let i=1;i<activeLink.length;i++){
     activeLink[i].addEventListener('mouseout',() => {activeLink[i].classList.remove('active')})
 }
 
-ip
+//  navbar bar on click 
+const menu = document.querySelector('.navbar_menu');
+const bar =document.querySelector('.navbar_bar');
+bar.addEventListener('click',() => {
+    menu.classList.toggle('active')
+})
