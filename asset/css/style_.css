@@ -106,9 +106,10 @@ ul li a {
   position: relative;
   border: 3px #fff solid;
 }
-.navbar_menu_item_link.active{
+.
+/* .navbar_menu_item_link.active{
   border-top: 3px var(--navbar-bg) solid;
-}
+} */
 .navbar_bar{
   display: none;
 }
@@ -129,7 +130,7 @@ ul li a {
   display:block;
   padding-inline-start: 30px;
   padding-inline-end: 50px;
-  padding-block: 10px;
+  padding-block: 15px;
   border-bottom: 1px solid #eee;
 }
 .navbar_menu_item_link:hover~.navbar_sub-menu{
