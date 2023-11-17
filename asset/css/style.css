@@ -3,14 +3,33 @@
 :root {
   --primary-font: Roboto;
   --secondary-font: Roboto Slab;
-  --color-black: #000;
-  --color-white: #fff;
+  /* text color  */
+  --color-black:#444;
+  /* slider text color  */
+  --color-white-1:#fff;
+  /* background color  */
+  --color-white-2:#f7f7f7;
+  /* blog text color  */
+  --color-gray-1: #9A9A9A;
+  /* footer text color  */
+  --color-gray-2: #D6D6D6;
+  /* hr line color  */
   --color-red: #ff0000;
-  --size-xxl: 27px;
-  --size-xl: 24px;
-  --size-l: 21px;
-  --size-m: 18px;
-  --size-s: 15px;
+  /* slider title size  */
+  --size-4xl:76px;
+  --size-3xl:54px;
+  /* heading text size  */
+  --size-xxl: 31px;
+  /* work_card_title,
+    client_title,
+    testimonial_card_title 
+   */
+  --size-xl: 21px;
+  /* service_card_title  */
+  --size-l: 18px;
+  /* text color  */
+  --size-m: 16px;
+  --size-s: 14px;
 }
 * {
   box-sizing: border-box;
@@ -28,11 +47,23 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-
+p{
+  font-size: var(--size-s);
+}
 .vh {
   background-color: #ffe0e0;
   height: 100px;
 }
+.navbar,
+.slider,
+.client,
+.work,
+.service,
+.testimonial,
+.blog{
+  background-color: var(--color-white-2);
+}
+
 /* nav menu section start */
 .navbar {
   width: 100%;
@@ -79,7 +110,7 @@ a {
   position: relative;
   padding: 30px 20px;
   display: inline-block;
-  font-size: var(--size-s);
+  font-size: var(--size-m);
 }
 .navbar_item:hover::before,
 .navbar_item.active::before {
@@ -93,14 +124,14 @@ a {
 }
 .navbar_sub-menu {
   display: none;
-  background-color: var(--color-white);
+  background-color: var(--color-white-1);
   position: absolute;
   top: 100%;
   left: -10%;
   border-top: 2px var(--color-red) solid;
 }
 .navbar_sub-menu_item_link {
-  font-size: var(--size-s);
+  font-size: var(--size-m);
   width: 200px;
   padding-inline-start: 30px;
   padding-block: 10px;
@@ -139,14 +170,14 @@ a {
   .navbar_menu.active .navbar_item {
     display: inline-block;
     background-color: var(--color-red);
-    font-size: var(--size-s);
+    font-size: var(--size-m);
     width: 200px;
     padding-inline-start: 30px;
     padding-block: 20px;
     border-bottom: 1px solid gray;
   }
   .navbar_item_link {
-    color: var(--color-white);
+    color: var(--color-white-1);
     font-weight: 300;
   }
   .navbar_sub-menu {
@@ -157,7 +188,7 @@ a {
   }
   .navbar_sub-menu_item_link {
     border: 0;
-    color: var(--color-white);
+    color: var(--color-white-1);
     font-weight: 300;
     background-color: var(--color-red);
     width: 150px;
@@ -205,7 +236,7 @@ a {
 }
 .fa-chevron-left,
 .fa-chevron-right {
-  color: var(--color-white);
+  color: var(--color-white-1);
   font-size: var(--size-m);
 }
 /* Define styles for your slides */
@@ -232,15 +263,15 @@ a {
 .slide_title,
 .slide_heading,
 .slide_btn {
-  color: var(--color-white);
+  color: var(--color-white-1);
 }
 .slide_title {
   font-weight: 300;
-  font-size: 30px;
+  font-size: var(--size-xxl);
   text-transform: capitalize;
 }
 .slide_line {
-  background: var(--color-white);
+  background: var(--color-white-1);
   height: 1px;
   margin-top: 40px;
   width: 200px;
@@ -250,7 +281,7 @@ a {
   font-weight: 400;
   margin-block-start: 30px;
   margin-block-end: 30px;
-  font-size: 70px;
+  font-size: var(--size-4xl);
   text-transform: capitalize;
   position: relative;
 }
@@ -273,15 +304,15 @@ a {
   -o-transform: translate(-100%, -30%);
 }
 .slide_btn a {
-  border: var(--color-white) 2px solid;
-  color: var(--color-white);
+  border: var(--color-white-1) 2px solid;
+  color: var(--color-white-1);
   min-width: 1%;
   padding: 10px;
   font-size: 20px;
   margin: 0 auto;
 }
 .slide2 .slide_heading {
-  font-size: 55px;
+  font-size: var(--size-3xl);
 }
 .slide2 .slide_line {
   margin-top: -10px;
@@ -297,10 +328,10 @@ a {
     height: 500px;
   }
   .slide .slide_title {
-    font-size: 25px;
+    font-size: var(--size-xl);
   }
   .slide .slide_heading {
-    font-size: 30px;
+    font-size: var(--size-xxl);
   }
   .slide_heading-dot {
     height: 5px;
@@ -314,7 +345,7 @@ a {
   padding: 40px;
 }
 .stroke {
-  color: var(--color-white);
+  color: var(--color-white-1);
   font-size: 55px;
   -webkit-text-stroke: 1.5px var(--color-red);
   border-radius: 50%;
@@ -326,7 +357,7 @@ a {
 }
 .stroke:hover {
   color: var(--color-red);
-  -webkit-text-stroke: 1.5px var(--color-white);
+  -webkit-text-stroke: 1.5px var(--color-white-1);
   font-size: 55px;
   background-color: var(--color-red);
   border-radius: 50%;
@@ -367,18 +398,19 @@ a {
 }
 .work_title,.service_title,.testimonial_title {
   font-family: var(--secondary-font);
-  font-size: 50px;
+  font-size: var(--size-xxl);
   font-weight: 300;
   text-transform: capitalize;
   text-align: center;
   margin-block: 30px;
 }
 .work_line,.service_line,.testimonial_line{
-  width: 150px;
-  height: 2px;
-  text-align: center;
-  display: block;
-  background-color: var(--color-red);
+  margin: auto;
+  height: 1px;
+  background: #F44336;
+  margin-top: 10px;
+  position: relative;
+  width: 50px;
 }
 .work-text,.service_text,.testimonial_text,.testimonial_card_title span{
   text-align: center;
@@ -394,15 +426,20 @@ a {
 .work_card{
   max-width: 400px;
   overflow: hidden;
-  background-color: var(--color-white);
+  background-color: var(--color-white-1);
   text-align: center;
 }
-.work_card_img,.testimonial_card_img{
+.work_card_img{
   width: 100%;
+}
+.testimonial_card_img{
+  width: 100px;
+  padding: 15px;
 }
 .work_card_title,.service_card_title,.testimonial_card_title{
   font-family: var(--secondary-font);
-  font-weight: 400;
+  font-size: var(--size-xl);
+  font-weight: 300;
   margin-block: 20px;
 }
 .work_card_text{
@@ -410,7 +447,7 @@ a {
 }
 .work_btn{
   text-align: center;
-  background: var(--color-white);
+  background: var(--color-white-1);
   border: 1px solid gray;
   display: flex;
   text-transform: capitalize;
@@ -443,7 +480,7 @@ a {
   font-size: 40px;
   background-color: transparent;
   color: transparent;
-  -webkit-text-stroke: var(--color-white) 2px;
+  -webkit-text-stroke: var(--color-white-1) 2px;
 }
 .rating{
   text-align: center;
@@ -454,13 +491,13 @@ a {
   padding-block: 40px;
 }
 .rating_count{
-  color: var(--color-white);
+  color: var(--color-white-1);
   font-size: 50px;
   font-weight: 300;
   margin-block: 5px;
 }
 .rating_text{
-  color: var(--color-white);
+  color: var(--color-white-1);
   font-family: var(--secondary-font);
   font-weight: 300;
   font-size: var(--size-m);
@@ -476,8 +513,8 @@ a {
   max-width: 400px;
 }
 .service_card_icon .stroke:hover{
-  background-color: var(--color-white);
-  color: var(--color-white);
+  background-color: var(--color-white-1);
+  color: var(--color-white-1);
   -webkit-text-stroke: 1.5px var(--color-red);
 }
 /* service section end  */
@@ -503,6 +540,5 @@ a {
 .testimonial_cards{
   grid-template-columns: 1fr;
 }  
-
 }
 /* testimonial section end */

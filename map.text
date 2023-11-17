@@ -1,0 +1,29 @@
+  --primary-font: Roboto;
+  --secondary-font: Roboto Slab;
+  /* text color  */
+  --color-black:#444;
+  /* slider text color  */
+  --color-white-1:#fff;
+  /* background color  */
+  --color-white-2:#f7f7f7;
+  /* blog text color  */
+  --color-gray-1: #9A9A9A;
+  /* footer text color  */
+  --color-gray-2: #D6D6D6;
+  /* hr line color  */
+  --color-red: #ff0000;
+  /* slider title size  */
+  --size-4xl:76px;
+  --size-3xl:54px;
+  /* heading text size  */
+  --size-xxl: 31px;
+  /* work_card_title,
+    client_title,
+    testimonial_card_title 
+   */
+  --size-xl: 21px;
+  /* service_card_title  */
+  --size-l: 18px;
+  /* text color  ,nav link*/
+  --size-m: 16px;
+  --size-s: 14px;
