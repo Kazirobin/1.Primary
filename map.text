@@ -24,6 +24,6 @@
   --size-xl: 21px;
   /* service_card_title  */
   --size-l: 18px;
-  /* text color  ,nav link*/
+  /* text color,nav link*/
   --size-m: 16px;
   --size-s: 14px;
