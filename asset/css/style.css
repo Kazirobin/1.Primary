@@ -395,9 +395,6 @@ p{
 }
 /* client section end  */
 /* work section start  */
-.work {
-  margin: 20px;
-}
 .work_title,.service_title,.testimonial_title {
   font-family: var(--secondary-font);
   font-size: var(--size-xxl);
@@ -423,7 +420,6 @@ p{
   margin-block: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-  gap: 30px;
 }
 .work_card{
   max-width: 400px;
@@ -432,7 +428,9 @@ p{
   text-align: center;
 }
 .work_card_img{
-  width: 100%;
+  width: 250px;
+  margin: 0 auto;
+  display:block;
 }
 .testimonial_card_img{
   width: 100px;
