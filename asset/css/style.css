@@ -371,6 +371,7 @@ p{
 .client {
   display: flex;
   flex-direction: column;
+  min-width:250px;
 }
 .client_title {
   text-transform: capitalize;
