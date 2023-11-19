@@ -404,10 +404,8 @@ p{
   margin-block: 30px;
 }
 .work_line,.service_line,.testimonial_line{
-  margin: auto;
   height: 1px;
   background: #F44336;
-  margin-top: 10px;
   position: relative;
   width: 50px;
 }
@@ -415,6 +413,7 @@ p{
   text-align: center;
   font-size: var(--size-m);
   margin-block: 30px;
+  font-weight: 300;
 }
 .work_cards,.service_cards,.testimonial_cards{
   margin-block: 30px;
@@ -542,3 +541,29 @@ p{
 }  
 }
 /* testimonial section end */
+/* blog section start  */
+.blog_cards{
+  display: flex;
+  max-width: 1200px;
+}
+.blog_card{
+  text-align: center;
+}
+.blog_card_img{
+  max-width: 360px;
+  height: 250px;
+}
+.blog_card_title{
+  font-family: var(--secondary-font);
+  font-size: var(--size-l);
+  font-weight: 300;
+  color: var(--color-black);
+  padding-block: 10px;
+}
+.blog_card_text{
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: var(--size-s);
+  color: var(--color-gray-1);
+}
+/* blog section end  */
