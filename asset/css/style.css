@@ -544,6 +544,7 @@ p{
 /* blog section start  */
 .blog_cards{
   display: flex;
+  flex-wrap:wrap;
   max-width: 1200px;
 }
 .blog_card{
