@@ -575,3 +575,58 @@ footer{
 .contact{
   color: var(--color-white-2);
 }
+/* footer section start  */
+footer{
+  /* background-color: var(--color-black); */
+}
+.footer-logo{
+  width: 100%;
+}
+.footer-col img{
+  display: inline-block;
+  background-color: #eee;
+}
+.footer-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 25%;
+  padding-inline-end: 10px;
+}
+.footer-text{
+  max-width: 100%;
+}
+.contact{
+  color: var(--color-white-2);
+}
+@media(max-width:767px){
+  .footer-col{
+    width: 50%;
+  }
+}
+@media(max-width:574px){
+  .footer-col{
+    width: 100%;
+  }
+}
+.copyright{
+  background-color: #455;
+  width: 100%;
+
+}
+.copyright-l{
+  display: inline;
+  text-align: left;
+}
+.copyright-r ul{
+  margin-left: auto;
+  
+  display: inline;
+}
+.copyright-r ul li{
+  display: inline;
+}
