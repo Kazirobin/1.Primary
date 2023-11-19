@@ -569,7 +569,7 @@ p{
 /* blog section end  */
 /* footer section start  */
 footer{
-  background-color: var(--color-black);
+  /* background-color: var(--color-black); */
 }
 .contact{
   color: var(--color-white-2);
