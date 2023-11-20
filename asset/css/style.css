@@ -571,14 +571,13 @@ p{
 
 /* footer section start  */
 footer{
-  /* background-color: var(--color-black); */
+  background-color: var(--color-black);
 }
 .footer-logo{
   width: 100%;
 }
 .footer-col img{
   display: inline-block;
-  background-color: #eee;
 }
 .footer-row{
   display: flex;
@@ -593,6 +592,7 @@ footer{
 }
 .footer-text{
   max-width: 100%;
+  color: var(--color-white-2);
 }
 .contact{
   color: var(--color-white-2);
