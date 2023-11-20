@@ -573,6 +573,34 @@ p{
 footer{
   background-color: var(--color-black);
 }
+.footer_social{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 1fr;
+}
+.footer_social_icon{
+  width: 100%;
+  padding-block: 10px;
+  border: var(--color-gray-1) 2.5px solid;
+  text-align: center;
+}
+.footer_social_icon a{
+  border: 5px solid var(--color-white-1);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.footer_social_icon a i{
+line-height: 50px;
+text-align: center;
+  font-size: 40px;
+  color: var(--color-white-1);
+}
 .footer-logo{
   width: 100%;
 }
@@ -585,13 +613,37 @@ footer{
 }
 .footer-col{
   display: flex;
-  justify-content: start;
   flex-direction: column;
   width: 25%;
-  padding-inline-end: 10px;
+  padding-block-start: 30px;
 }
 .footer-text{
   max-width: 100%;
+  color: var(--color-white-2);
+  font-size: var(--size-s);
+  font-weight: 300;
+}
+.footer-title{
+  color: var(--color-white-1);
+  font-size: var(--size-l);
+  font-weight: 300;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.footer-item,.footer-item i,.footer-item a{
+  color: var(--color-white-1);
+  font-size: var(--size-s);
+}
+.footer-item{
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-gray-2);
+  font-weight: 300;
+}
+.footer-item span{
+  text-align: right;
   color: var(--color-white-2);
 }
 .contact{
@@ -601,6 +653,9 @@ footer{
   .footer-col{
     width: 50%;
   }
+  .copyright{
+    flex-direction: column;
+  }
 }
 @media(max-width:574px){
   .footer-col{
@@ -608,19 +663,30 @@ footer{
   }
 }
 .copyright{
-  background-color: #455;
   width: 100%;
-
+  background-color: var(--color-black);
+ display: flex;
+ justify-content: space-between;
 }
 .copyright-l{
-  display: inline;
+  display: inline-block;
   text-align: left;
+  color: var(--color-white-2);
+  width: 100%;
+}
+.copyright-r{
+width: 100%;
+  display: inline-block;
+  text-align: right;  color: var(--color-white-2);
 }
 .copyright-r ul{
-  margin-left: auto;
   
-  display: inline;
+  text-align: right;
+  display: ;
 }
 .copyright-r ul li{
-  display: inline;
+  display: inline-block;
+}
+.copyright-r ul li a{
+  color: var(--color-white-2);
 }
