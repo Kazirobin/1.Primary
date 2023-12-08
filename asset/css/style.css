@@ -682,11 +682,45 @@ width: 100%;
 .copyright-r ul{
   
   text-align: right;
-  display: ;
 }
 .copyright-r ul li{
   display: inline-block;
 }
 .copyright-r ul li a{
   color: var(--color-white-2);
+}
+/* from section  */
+.from{
+  height: 500px;
+  width: 1140px;
+}
+.from__contact{
+  font-weight: 700;
+}
+.from__title{
+  font-size: 40px;
+}
+.from__text{
+  font-size: 20px;
+  width: 700px;
+  margin-left: unset;
+}
+.from__input{
+  display: inline-block;
+  width: 427px;
+  margin: 0;
+  padding-block: 20px ;
+  margin-block: 10px;
+}
+.from__input:nth-of-type(3){
+  width:857px;
+}
+
+.from__btn{
+  display: block;
+  width: 857px;
+  margin: 0;
+  background-color: green;
+  padding-block: 10px;
+  color: #fff;
 }
