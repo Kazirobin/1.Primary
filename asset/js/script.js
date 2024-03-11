@@ -6,7 +6,7 @@ navbar.addEventListener('click',() => {
 })
 // slider section 
 let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slide'); 
 
 function showSlide(direction) {
     slides[currentSlide].classList.remove('active-slide');
