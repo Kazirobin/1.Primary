@@ -572,6 +572,7 @@ p{
 /* footer section start  */
 footer{
   background-color: var(--color-black);
+  padding-inline: 40px;
 }
 .footer_social{
   display: grid;
@@ -581,7 +582,6 @@ footer{
 .footer_social_icon{
   width: 100%;
   padding-block: 10px;
-  border: var(--color-gray-1) 2.5px solid;
   text-align: center;
 }
 .footer_social_icon a{
@@ -688,4 +688,5 @@ width: 100%;
 }
 .copyright-r ul li a{
   color: var(--color-white-2);
+  padding-inline-end: 10px;
 }
